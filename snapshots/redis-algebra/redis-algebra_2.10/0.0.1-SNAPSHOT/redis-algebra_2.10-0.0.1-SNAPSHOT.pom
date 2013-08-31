@@ -24,7 +24,7 @@
         <dependency>
             <groupId>typeclass-inject</groupId>
             <artifactId>typeclass-inject_2.10</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.2</version>
         </dependency>
         <dependency>
             <groupId>org.specs2</groupId>
