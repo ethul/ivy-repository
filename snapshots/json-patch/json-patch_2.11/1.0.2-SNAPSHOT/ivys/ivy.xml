@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="json-patch" module="json-patch_2.11" revision="1.0.2-SNAPSHOT" status="integration" publication="20140805142256">
+		<description>
+		json-patch
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		
+		<conf name="pom" visibility="public" description=""/>
+		
+	</configurations>
+	<publications>
+		<artifact name="json-patch_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="json-patch_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="json-patch_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.2" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="twirl-api_2.11" rev="1.0.2" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play_2.11" rev="2.3.2" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.3.2" conf="test->default(compile)"/>
+		
+		<dependency org="org.scalaz" name="scalaz-core_2.11" rev="7.1.0" conf="compile->default(compile)"/>
+		<dependency org="org.scalaz" name="scalaz-concurrent_2.11" rev="7.1.0" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>
